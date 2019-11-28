@@ -85,8 +85,25 @@ A simple case of checking the paths is being recalculated everytime you iterate 
 You could use that subproblem to solve other subproblems like in the case above. 
 
 *Solution*
-From the analysis of the problem, we could use Dynamic Programming to solve this problem 
-	•	For 
+	From the analysis of the problem, we could use Dynamic Programming to solve this problem 
+	
+		•	We already know that the lowest row are the best case for that row since they can not continue the path.
+		•	We will start at the second to last row, and check each column for the best solution.
+			*This will be out subproblem, we will repeat this subproblem:
+				For each row: 
+					For each index:
+						find the minimum value valid path*
+			Example: [4]
+	    		 	 | \ 
+	   			[7] [8]   
+			
+			Best solution would be 7. 
+		•	Once we identify the best solution, then we could add it to the current location of that row. 
+			We can conclude that this is the best path for this location since its the minimum path 
+			regardless of what path is chosen above that row. 
+		•	We will repeat this subproblem until we reach the top row.
+			Once we are at the top row, for each value we would be able to compute the minimum falling path since we have 
+			identified the minimum path for each row below. 
 
 	
 		
