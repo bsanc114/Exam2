@@ -1,13 +1,12 @@
 public class ArithmeticSlices {
-    public int sumOfArithmeticSlices(int[] input) {
-        int dynamicP = 0;
+    public int numberOfArithmeticSlices(int[] input) {
+        int[] dynamicP = new int[input.length];
         int sum = 0;
-        for (int i = 2; i < input.length; i++) {
+        for (int i = 2; i < dynamicP.length; i++) {
             if (input[i] - input[i - 1] == input[i - 1] - input[i - 2]) {
-                dynamicP = 1 + dynamicP;
-                sum += dynamicP;
-            } else
-                dynamicP = 0;
+                dynamicP[i] = 1 + dynamicP[i - 1];
+                sum += dynamicP[i];
+            }
         }
         return sum;
     }
