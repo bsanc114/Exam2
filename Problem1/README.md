@@ -17,7 +17,7 @@ A = [1, 2, 3, 4]
 
 return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.
 
-Breaking down the problem:
+*Breaking down the problem:*
 
 In order to solve this problem, we would want to deal with the simplest case:
 
@@ -43,7 +43,7 @@ From this analysis we could notice that there is a lot of repetition. One of the
 
 We could identify that the simple case is recalculated every time you iterate through the array. You could use that subproblem to solve other subproblems like in the case above. 
 
-Solution:
+*Solution:*
 
 From the analysis of the problem, we could use Dynamic Programming to solve this problem. 
 
