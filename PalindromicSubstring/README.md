@@ -65,3 +65,5 @@ recalculate the palindromes per range.
  Since we can conclude that as you are iterating through the string, you are taking into account palindromes before the index and the sum.
  
  We are able to conclude that the last index of that array would be the sum of all palindromes in the string. 
+ 
+ In order to carry this out, we would need a method that for each index of the string, will call another method to check if there is palindromes up to that point. 
