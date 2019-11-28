@@ -27,17 +27,17 @@ So now that we have identified the simplest case, we could go a step further and
 
 	If A= [1,2,3,4,5] then we would have to check 
 	
-A.	A[0] -  A[1] = A[1] -  A[2] which would set the sum + 1.
+	A.	A[0] -  A[1] = A[1] -  A[2] which would set the sum + 1.
 
-B.	A[0] -  A[1] = A[1] - A[2] = A[2] - A[3] which would set the sum + 1.
+	B.	A[0] -  A[1] = A[1] - A[2] = A[2] - A[3] which would set the sum + 1.
 
-C.	A[0] -  A[1] = A[1] - A[2] = A[2] - A[3] = A[3] - A[4] which would set the sum + 1.
+	C.	A[0] -  A[1] = A[1] - A[2] = A[2] - A[3] = A[3] - A[4] which would set the sum + 1.
 
-D.	A[1] – A[2] = A[2] – A[3] which would set the sum +1
+	D.	A[1] – A[2] = A[2] – A[3] which would set the sum +1
 
-E.	A[1] – A[2] = A[2] – A[3] = A[3] – A[4] which would set the sum + 1
+	E.	A[1] – A[2] = A[2] – A[3] = A[3] – A[4] which would set the sum + 1
 
-F.	A[2] – A[3] = A[3] – A[4] which would set the sum +1
+	F.	A[2] – A[3] = A[3] – A[4] which would set the sum +1
 
 From this analysis we could notice that there is a lot of repetition. One of the main things we can conclude is that you need to re calculate the length of the arithmetic slice each time you iterate. Not only do we have to re calculate the length but also re conclude that it is an arithmetic slice. 
 
